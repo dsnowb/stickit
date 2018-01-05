@@ -26,7 +26,7 @@ Note.loadNotes = function() {
 
 //actions performed on unload
 Note.onExit = function() {
-  for (var i = 0; i < Note.notes.length; i++) if(!Notes.notes[i].trashed) Note.notes[i].sfx = 'loadnote';
+  for (var i = 0; i < Note.notes.length; i++) if (!Note.notes[i].trashed) Note.notes[i].sfx = 'loadnote';
   Note.saveNotes();
 };
 
